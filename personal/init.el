@@ -1,6 +1,3 @@
-;; General editor settings
-(global-undo-tree-mode 0) ; Prelude thinks I don't want the normal emacs undo
-
 ;; Flyspell
 (require 'flyspell)
 (define-key flyspell-mode-map (kbd "C-.") nil)
