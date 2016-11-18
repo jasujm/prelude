@@ -2,6 +2,7 @@
 (require 'cc-mode)
 (defun my-cc-setup ()
   "Custom C++ setup."
+  (c-set-style "stroustrup")
   (c-set-offset 'innamespace [0])
   (subword-mode 1))
 (add-hook 'c-mode-common-hook 'my-cc-setup)
