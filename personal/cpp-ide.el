@@ -19,7 +19,6 @@
 (require 'company)
 (setq company-backends (delete 'company-clang company-backends))
 (add-to-list 'company-backends 'company-c-headers)
-(add-to-list 'company-backends 'company-anaconda)
 (define-key c-mode-base-map  (kbd "C-.") 'company-complete)
 (define-key c-mode-base-map  (kbd "C-:") 'helm-company)
 
