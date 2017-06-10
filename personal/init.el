@@ -1,3 +1,6 @@
+;; Helm
+(global-set-key (kbd "M-x") 'helm-M-x)
+
 ;; Flyspell
 (require 'flyspell)
 (define-key flyspell-mode-map (kbd "C-.") nil)
