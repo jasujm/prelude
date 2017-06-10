@@ -19,8 +19,8 @@
 (require 'company)
 (setq company-backends (delete 'company-clang company-backends))
 (add-to-list 'company-backends 'company-c-headers)
-(define-key c-mode-base-map  (kbd "C-.") 'company-complete)
-(define-key c-mode-base-map  (kbd "C-:") 'helm-company)
+(define-key c-mode-base-map  (kbd "C-:") 'company-complete)
+(define-key c-mode-base-map  (kbd "C-.") 'helm-company)
 
 (require 'company-c-headers)
 (add-to-list 'company-c-headers-path-system "/usr/include/c++/5.4.0/")
