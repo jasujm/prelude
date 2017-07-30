@@ -1,5 +1,5 @@
 ;; Helm
-(global-set-key (kbd "M-x") 'helm-M-x)
+(require 'prelude-helm-everywhere)
 
 ;; Flyspell
 (require 'flyspell)
