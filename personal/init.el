@@ -13,3 +13,6 @@
 ;; Yasnippet
 (require 'yasnippet)
 (yas-global-mode 1)
+
+;; ace-window
+(global-set-key (kbd "C-x o") 'ace-window)
