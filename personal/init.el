@@ -1,6 +1,3 @@
-;; Helm
-(require 'prelude-helm-everywhere)
-
 ;; Flyspell
 (require 'flyspell)
 (define-key flyspell-mode-map (kbd "C-.") nil)
