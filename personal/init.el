@@ -8,8 +8,10 @@
 (setq git-commit-fill-column 80)
 
 ;; Yasnippet
+(prelude-require-packages '(yasnippet yasnippet-snippets))
 (require 'yasnippet)
 (yas-global-mode 1)
 
 ;; ace-window
+(require 'ace-window)
 (global-set-key (kbd "C-x o") 'ace-window)

@@ -27,5 +27,6 @@
 (define-key c-mode-base-map  (kbd "C-:") 'company-complete)
 (define-key c-mode-base-map  (kbd "C-.") 'helm-company)
 
+(prelude-require-package 'company-c-headers)
 (require 'company-c-headers)
 (add-to-list 'company-c-headers-path-system "/usr/include/c++/5.4.0/")
