@@ -1,11 +1,17 @@
 ;; C/C++
 (require 'cc-mode)
 (defun my-cc-setup ()
+  "Custom C/C++ setup."
+  (subword-mode 1))
+(add-hook 'c-mode-common-hook 'my-cc-setup)
+
+;; C++ only
+(defun my-c++-setup ()
   "Custom C++ setup."
   (c-set-style "stroustrup")
   (c-set-offset 'innamespace [0])
-  (subword-mode 1))
-(add-hook 'c-mode-common-hook 'my-cc-setup)
+  (setq flycheck-gcc-language-standard "c++14"))
+(add-hook 'c++-mode-hook 'my-c++-setup)
 
 ;; Helm
 (require 'helm-gtags)
