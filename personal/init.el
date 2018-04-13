@@ -5,7 +5,7 @@
 ;; Magit
 (require 'magit)
 (setq git-commit-summary-max-length 80)
-(setq git-commit-fill-column 80)
+(setq fill-column 80)
 
 ;; Yasnippet
 (prelude-require-packages '(yasnippet yasnippet-snippets))
