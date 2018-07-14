@@ -6,11 +6,13 @@
 (add-hook 'c-mode-common-hook 'my-cc-setup)
 
 ;; C++ only
+
+(require 'flycheck)
 (defun my-c++-setup ()
   "Custom C++ setup."
   (c-set-style "stroustrup")
   (c-set-offset 'innamespace [0])
-  (setq flycheck-gcc-language-standard "c++14"))
+  (setq flycheck-gcc-language-standard "c++17"))
 (add-hook 'c++-mode-hook 'my-c++-setup)
 
 ;; Helm
@@ -29,4 +31,4 @@
 
 (prelude-require-package 'company-c-headers)
 (require 'company-c-headers)
-(add-to-list 'company-c-headers-path-system "/usr/include/c++/5.4.0/")
+(add-to-list 'company-c-headers-path-system "/usr/include/c++/7.3.0/")
