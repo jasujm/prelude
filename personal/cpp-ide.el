@@ -24,7 +24,6 @@
 
 ;; Company
 (require 'company)
-(setq company-backends (delete 'company-clang company-backends))
 (add-to-list 'company-backends 'company-c-headers)
 (define-key c-mode-base-map  (kbd "C-:") 'company-complete)
 (define-key c-mode-base-map  (kbd "C-.") 'helm-company)
