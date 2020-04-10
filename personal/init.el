@@ -1,3 +1,5 @@
+(prelude-require-packages '(flyspell magit yasnippet ace-window))
+
 ;; Flyspell
 (require 'flyspell)
 (define-key flyspell-mode-map (kbd "C-.") nil)

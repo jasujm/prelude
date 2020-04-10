@@ -1,3 +1,5 @@
+(prelude-require-packages '(flycheck helm-gtags company company-c-headers))
+
 ;; C/C++
 (require 'cc-mode)
 (defun my-cc-setup ()
