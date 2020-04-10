@@ -32,4 +32,4 @@
 
 (prelude-require-package 'company-c-headers)
 (require 'company-c-headers)
-(add-to-list 'company-c-headers-path-system "/usr/include/c++/7.3.0/")
+(add-to-list 'company-c-headers-path-system "/usr/include/c++/9/")
