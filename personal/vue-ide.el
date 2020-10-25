@@ -3,14 +3,14 @@
 (require 'lsp-mode)
 
 (use-package lsp-mode
-             :commands lsp)
+  :commands lsp)
 
 ;; for completions
 (use-package company-lsp
-             :after lsp-mode
-             :config (push 'company-lsp company-backends))
+  :after lsp-mode
+  :config (push 'company-lsp company-backends))
 
 (use-package vue-mode
-             :mode "\\.vue\\'"
-             :config
-             (add-hook 'vue-mode-hook #'lsp))
+  :mode "\\.vue\\'"
+  :config
+  (add-hook 'vue-mode-hook #'lsp))
