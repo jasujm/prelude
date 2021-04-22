@@ -1,4 +1,4 @@
-(prelude-require-packages '(vue-mode lsp-mode))
+(prelude-require-packages '(use-package vue-mode company-lsp lsp-mode))
 
 (require 'lsp-mode)
 
