@@ -6,8 +6,6 @@
 
 ;; Magit
 (require 'magit)
-(global-set-key (kbd "C-c g") 'magit-status)
-(global-set-key (kbd "C-c C-g") 'magit-dispatch-popup)
 (setq git-commit-summary-max-length 80)
 (setq fill-column 80)
 
