@@ -1,16 +1,19 @@
-(prelude-require-packages '(use-package vue-mode company-lsp lsp-mode))
+(prelude-require-packages '(use-package vue-mode lsp-mode prettier-js))
 
-(require 'lsp-mode)
+(defun my-vue-setup ()
+  "Custom Vue setup"
+  (lsp)
+  (prettier-js-mode))
 
 (use-package lsp-mode
-  :commands lsp)
+  :custom
+  (lsp-vetur-format-default-formatter-css "none")
+  (lsp-vetur-format-default-formatter-html "none")
+  (lsp-vetur-format-default-formatter-js "none")
+  (lsp-vetur-validation-template nil))
 
-;; for completions
-(use-package company-lsp
-  :after lsp-mode
-  :config (push 'company-lsp company-backends))
-
+(require 'lsp-mode)
 (use-package vue-mode
   :mode "\\.vue\\'"
   :config
-  (add-hook 'vue-mode-hook #'lsp))
+  (add-hook 'vue-mode-hook 'my-vue-setup))
