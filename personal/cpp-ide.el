@@ -27,8 +27,6 @@
 ;; Company
 (require 'company)
 (add-to-list 'company-backends 'company-c-headers)
-(define-key c-mode-base-map  (kbd "C-:") 'company-complete)
-(define-key c-mode-base-map  (kbd "C-.") 'helm-company)
 
 (prelude-require-package 'company-c-headers)
 (require 'company-c-headers)

@@ -8,5 +8,5 @@
 (require 'company)
 (add-to-list 'company-backends 'company-anaconda)
 
-(require 'anaconda-mode)
-(define-key anaconda-mode-map  (kbd "C-.") 'helm-company)
+;(require 'anaconda-mode)
+;(define-key anaconda-mode-map  (kbd "C-.") 'helm-company)
