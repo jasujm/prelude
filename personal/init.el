@@ -1,13 +1,14 @@
 (prelude-require-packages '(flyspell magit yasnippet ace-window helm-company))
 
+(setq-default fill-column 80)
+
 ;; Flyspell
 (require 'flyspell)
 (define-key flyspell-mode-map (kbd "C-.") nil)
 
 ;; Magit
 (require 'magit)
-(setq git-commit-summary-max-length 80)
-(setq fill-column 80)
+(setq-default git-commit-summary-max-length 80)
 
 ;; Yasnippet
 (prelude-require-packages '(yasnippet yasnippet-snippets))

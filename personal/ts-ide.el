@@ -1,5 +1,9 @@
 (prelude-require-packages '(use-package typescript-mode lsp-mode format-all))
 
+; to match prettier behavior
+(require 'typescript-mode)
+(setq-default typescript-indent-level 2)
+
 (require 'lsp-mode)
 (require 'format-all)
 (defun my-ts-setup ()
